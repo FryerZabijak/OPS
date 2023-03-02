@@ -11,8 +11,7 @@ max_radky=$(cat /etc/passwd | wc -l)
 # Číslo řádku nemůže být 0
 # Když uživatel napíše zápornou hodnotu, tak se řádky budou počítat od konce
 
-if [ $cislo_radku -gt $max_radky ] || [ $cislo_radku -eq 0 ] || [ $cislo_radku -lt $((-$max_radky+1)) ]
-then
+if [ $cislo_radku -gt $max_radky ] || [ $cislo_radku -eq 0 ] || [ $cislo_radku -lt $((-$max_radky + 1)) ]; then
     echo "Takový řádek neexistuje"
     exit 1
 else
