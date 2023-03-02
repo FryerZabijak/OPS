@@ -6,7 +6,7 @@ echo "Skript vypíše login uživatele, podle čísla řádku v souboru /etc/pas
 read -r -p "Zadej číslo řádku: " cislo_radku
 
 max_radky=$(cat /etc/passwd | wc -l)
-if [ $cislo_radku -gt $max_radky ]
+if [ $cislo_radku -gt $max_radky ] || [ $cislo_radku -eq 0 ] || [ $cislo_radku -lt $((-$max_radky+1)) ]
 then
     echo "Takový řádek neexistuje"
     exit 1
