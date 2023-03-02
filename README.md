@@ -1,5 +1,5 @@
 # Linux Bash Příkazy
-1. Vypište proces, který zabírá nejvíce paměti 
+1. [x] Vypište proces, který zabírá nejvíce paměti 
 2. Zadejte název procesu, a zjistěte, zda ho máte spuštěný 
 3. Vypište název naposledy změněného souboru na Ploše 
 4. Vypište počet neprázdných spustitelných souborů v adresáři (včetně podadresářů) jehož název zadá uživatel. Pokud adresář neexistuje napište o tom informaci. 
